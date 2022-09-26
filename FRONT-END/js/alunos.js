@@ -1,12 +1,43 @@
 'use strict'
 
-import { listaAlunos, listaAlunosStatus } from "./api.js";
+import { listaAlunos, listaAlunosStatus, listaCursos } from "./api.js";
+
+let parameter01 = window.location.search.substring(1);
+let sigla01 = parameter01.split('=')[1];
+
+const nomeCurso = async (array, nome) => {
+
+    let alunos = await array;
+    let sigla = nome;
+
+    const main = document.querySelector('main');
+
+    const name = document.createElement('span');
+    name.classList.add('course-name');
+    
+    alunos.forEach(item => {
+
+        if (item.sigla.includes(sigla)) {
+
+            name.textContent = item.nome;
+
+        }
+
+    });
+
+    main.appendChild(name);
+
+}
+
+nomeCurso(listaCursos(), sigla01);
 
 const cardsAlunos = async (array) => {
 
     let alunos = await array;
     const cards = document.querySelector('.students-container');
     cards.textContent = '';
+
+    console.log('01')
 
     for (let i = 0 ; i < alunos.length ; i++) {
 
@@ -48,6 +79,8 @@ const changeScreen = () => {
 
     cardsAlunos(listaAlunos(sigla));
 
+    console.log('02')
+
 }
 
 const createCardsStatus = (status) => {
@@ -83,4 +116,6 @@ const cases = () => {
 } 
 
 changeScreen();
+
+console.log('03')
 document.getElementById('status').addEventListener('change', cases);

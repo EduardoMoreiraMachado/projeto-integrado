@@ -4,8 +4,6 @@ import { listaCursos } from "./api.js";
 
 let api = listaCursos();
 
-console.log(api)
-
 const addIcons = async (array) => {
 
     let cursos = await array;
@@ -18,22 +16,16 @@ const addIcons = async (array) => {
 
         link.innerHTML = `
             <img src="${cursos[i].icone}">
-            <span class="course-text">${cursos[i].nome}</span>
+            <span class="course-text">${cursos[i].nome2}</span>
         `
 
         link.id = cursos[i].sigla;
         link.href = `listaAlunos.html?curso=${cursos[i].sigla}`;
-        
-        cards.appendChild(link);
 
+        cards.appendChild(link);
+        
     }
 
 }
 
 addIcons(api);
-
-export {
-
-    addIcons
-
-}

@@ -77,16 +77,22 @@ const notasAluno = async (array) => {
             case "Aprovado" :
 
                 barraNota.style.backgroundColor = '#3347B0';
+                barraNota.style.boxShadow = '0px 0px 24px #3347B0';
+                nota.style.color = '#3347B0';
                 break;
 
             case "Exame" :
 
-                barraNota.style.backgroundColor = '#E5B657';  
+                barraNota.style.backgroundColor = '#E5B657';
+                barraNota.style.boxShadow = '0px 0px 24px #E5B657';
+                nota.style.color = '#E5B657';
                 break;
 
             case "Reprovado" :
 
-                barraNota.style.backgroundColor = '#C11010'; 
+                barraNota.style.backgroundColor = '#C11010';
+                barraNota.style.boxShadow = '0px 0px 24px #C11010';
+                nota.style.color = '#C11010';
                 break;
 
             default :

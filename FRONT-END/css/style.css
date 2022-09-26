@@ -37,14 +37,15 @@ header {
 
 .exit {
     display: flex;
-}
-
-.exit {
-    display: flex;
     align-items: center;
     color: #fff;
     margin-right: 96px;
     gap: 10px;
+}
+
+.exit:hover {
+    text-shadow: 8px 8px 12px rgba(0, 0, 0, 1);
+    transition: all 0.3s;
 }
 
 .link {
