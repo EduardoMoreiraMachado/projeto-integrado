@@ -53,7 +53,7 @@ main {
     align-items: center;
     width: 100%;
     gap: 60px;
-    padding: 10%;
+    margin-top: 8%;
 }
 
 .student-item {
@@ -64,6 +64,12 @@ main {
     width: 200px;
     height: 300px;
     gap: 16px;
+}
+
+.student-item:hover {
+    border: 1px solid #000000;
+    box-shadow: 12px 12px 4px rgba(51, 71, 176, 0.5);
+    transition: all 0.3s;
 }
 
 .student-image {

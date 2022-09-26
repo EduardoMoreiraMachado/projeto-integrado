@@ -1,9 +1,35 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .student-subjects {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.subject-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .subject-bar {
-    background-color: var(--bar-color);
+    background-color: var(--secondary-color);
+    transform: rotatex(180deg);
     width: 16px;
     height: 300px;
 }

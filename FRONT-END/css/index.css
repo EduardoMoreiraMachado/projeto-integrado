@@ -46,10 +46,13 @@ main {
     width: 400px;
     height: 200px;
     background-color: var(--main-color);
-    border: 1px solid #000000;
-    box-shadow: 12px 12px 4px rgba(51, 71, 176, 0.5);
 }
 
+.course-item:hover {
+    border: 1px solid #000000;
+    box-shadow: 12px 12px 4px rgba(51, 71, 176, 0.5);
+    transition: all 0.3s;
+}
 
 .course-text {
     font-size: 64px;

@@ -18,7 +18,7 @@ const addIcons = async (array) => {
 
         link.innerHTML = `
             <img src="${cursos[i].icone}">
-            <span class="course-text">${cursos[i].sigla}</span>
+            <span class="course-text">${cursos[i].nome}</span>
         `
 
         link.id = cursos[i].sigla;
