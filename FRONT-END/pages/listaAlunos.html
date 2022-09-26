@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/listaAlunos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac5338e93e.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js" defer type="module"></script>
+    <script src="../js/alunos.js" defer type="module"></script>
+    <title>Lista de Alunos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo-image.svg" alt="" class="logo-image">
+            <h1 class="logo-text">Lion School</h1>
+        </div>
+        <div class="exit">
+            <a class="link" href="./index.html">
+                <i id="exit-icon" class="fa-solid fa-share-from-square"></i>
+                <h1 class="exit-text">Voltar</h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="filters-container">
+            <form class="status-container">
+                <select id="status">
+                    <option value="status">Status</option>
+                    <option value="finalizado">Finalizado</option>
+                    <option value="cursando">Cursando</option>
+                </select>
+            </form>
+            <div class="subtitle-container">
+                <h2 class="subtitle-title">LEGENDA</h2>
+                <div class="options">
+                    <div class="studying"></div>
+                    <h3 class="subtitle-option">Cursando</h3>
+                </div>
+                <div class="options">
+                    <div class="finished"></div>
+                    <h3 class="subtitle-option">Finalizado</h3>
+                </div>
+            </div>
+        </div>
+        <div class="students-container"></div>
+    </main>
+    <footer>
+        <div class="contacts-container">
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <h1 class="social-text">(11) 4774-4700</h1>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <h1 class="social-text">lionschool@gmail.com</h1>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h1 class="social-text">Rua tcc, 211, Centro, Jandira</h1>
+            </div>
+        </div>
+        <div class="copyright">
+            <h1 class="copyright-text">Copyright © 2022 | Eduardo Moreira</h1>
+        </div>
+        <div class="social-container">
+            <a href="#">
+                <div class="social-item">
+                    <i id="social-icon" class="fa-brands fa-youtube"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="social-item">
+                    <i id="social-icon" class="fa-brands fa-twitter"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="social-item">
+                    <i id="social-icon" class="fa-brands fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="social-item">
+                    <i id="social-icon" class="fa-brands fa-facebook-f"></i>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-container {
+    height: 50px;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.subtitle-container {
+    display: flex;
+    gap: 24px;
+}
+
+.subtitle-option {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.subtitle-title {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+    gap: 8px;
+}
+
+.studying {
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+}
+
+.finished {
+    width: 20px;
+    height: 20px;
+    background-color: var(--tertiary-color);
+}
+
+.students-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+    padding: 10%;
+}
+
+.student-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    gap: 16px;
+}
+
+.student-image {
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    top: 0px;
+}
+
+.student-name {
+    color: #fff;
+    text-align: center;
+}

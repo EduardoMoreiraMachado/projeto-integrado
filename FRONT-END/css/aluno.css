@@ -1,0 +1,9 @@
+.student-subjects {
+    display: flex;
+}
+
+.subject-bar {
+    background-color: var(--bar-color);
+    width: 16px;
+    height: 300px;
+}

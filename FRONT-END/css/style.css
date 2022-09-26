@@ -1,0 +1,134 @@
+:root {
+    --bg-color: #F5F5F5;
+    --main-color: #3347B0;
+    --secondary-color: #BCC2E5;
+    --tertiary-color: #E5B657;
+    --bar-color: #EEEFF8;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: var(--main-color);
+    height: 100px;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 96px;
+    gap: 10px;
+}
+
+.logo-text {
+    color: #fff;
+    word-wrap: break-word;
+    width: 75px;
+    height: 56px;
+    font-size: 24px;
+}
+
+.exit {
+    display: flex;
+}
+
+.exit {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: 96px;
+    gap: 10px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#exit-icon {
+    font-size: 30px;
+}
+
+.exit-text{
+    font-size: 36px;
+}
+
+main {
+    flex-grow: 2;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: var(--bg-color);
+}
+
+footer {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 24px;
+}
+
+.social-text {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.copyright-text {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.social-container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#social-icon {
+    font-size: 20px;
+}
