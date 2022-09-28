@@ -8,8 +8,6 @@ const listaCursos = async () => {
 
     const cursos = await response.json();
 
-    console.log(cursos);
-
     return cursos;
 
 }

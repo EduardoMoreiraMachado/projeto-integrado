@@ -3,14 +3,14 @@ var cursos = [
         "nome"  :   "Técnico em Desenvolvimento de Sistemas",
         "nome2" :   "DS",
         "sigla" :   "DS",
-        "icone" :   "../img/ds.svg",
+        "icone" :   "./FRONT-END/img/ds.svg",
         "carga" :   "1200",
     },
     {
         "nome"  :   "Técnico em Redes de Computadores",
         "nome2" :   "REDES",
         "sigla" :   "RDC",
-        "icone" :   "../img/rdc.svg",
+        "icone" :   "./FRONT-END/img/rdc.svg",
         "carga" :   "1200"
     },
 ];

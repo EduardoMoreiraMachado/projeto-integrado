@@ -15,12 +15,12 @@ const addIcons = async (array) => {
         link.classList.add('course-item');
 
         link.innerHTML = `
-            <img src="${cursos[i].icone}">
+            <img src="${cursos[i].icone}" class="course-icon">
             <span class="course-text">${cursos[i].nome2}</span>
         `
 
         link.id = cursos[i].sigla;
-        link.href = `listaAlunos.html?curso=${cursos[i].sigla}`;
+        link.href = `./FRONT-END/pages/listaAlunos.html?curso=${cursos[i].sigla}`;
 
         cards.appendChild(link);
         

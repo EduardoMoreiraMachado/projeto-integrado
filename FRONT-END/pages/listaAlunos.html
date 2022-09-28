@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/ac5338e93e.js" crossorigin="anonymous"></script>
     <script src="../js/main.js" defer type="module"></script>
     <script src="../js/alunos.js" defer type="module"></script>
+    <link rel="icon" type="imagem/png" href="../img/logo-image.svg" />
     <title>Lista de Alunos</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
             <h1 class="logo-text">Lion School</h1>
         </div>
         <div class="exit">
-            <a class="link" href="./index.html">
+            <a class="link" href="../../index.html">
                 <i id="exit-icon" class="fa-solid fa-share-from-square"></i>
                 <h1 class="exit-text">Voltar</h1>
             </a>
@@ -40,16 +41,21 @@
             <div class="subtitle-container">
                 <h2 class="subtitle-title">LEGENDA</h2>
                 <div class="options">
-                    <div class="studying"></div>
-                    <h3 class="subtitle-option">Cursando</h3>
-                </div>
-                <div class="options">
-                    <div class="finished"></div>
-                    <h3 class="subtitle-option">Finalizado</h3>
+                    <div class="option">
+                        <div class="studying"></div>
+                        <h3 class="subtitle-option">Cursando</h3>
+                    </div>
+                    <div class="option">
+                        <div class="finished"></div>
+                        <h3 class="subtitle-option">Finalizado</h3>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="students-container"></div>
+        <div class="course-info">
+            <div class="name-container"></div>
+            <div class="students-container"></div>
+        </div>
     </main>
     <footer>
         <div class="contacts-container">

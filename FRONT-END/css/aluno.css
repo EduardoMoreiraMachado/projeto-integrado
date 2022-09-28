@@ -3,6 +3,8 @@ main {
     justify-content: center;
     align-items: center;
     gap: 240px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .student-info {
@@ -18,7 +20,6 @@ main {
 
 .student-image {
     width: 400px;
-    height: 400px;
 }
 
 .student-name {
@@ -83,4 +84,46 @@ main {
     text-transform: uppercase;
     color: var(--main-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+    main {
+        gap: 30px;
+    }
+
+    .student-info{
+        width: 300px;
+        height: 300px;
+    }
+
+    .student-image {
+        width: 200px;
+    }
+
+    .student-name {
+        font-size: 12px;
+    }
+
+    .student-subjects {
+        width: 300px;
+        height: 300px;
+        gap: 1px;
+    }
+
+    .subject-info {
+        width: 30px;
+    }
+
+    .subject-grade {
+        font-size: 12px;
+    }
+
+    .subject-bar {
+        width: 8px;
+        height: 200px;
+    }
+
+    .subject-name {
+        font-size: 10px;
+    }
 }
