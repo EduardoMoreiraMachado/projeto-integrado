@@ -73,6 +73,10 @@ main {
     height: 300px;
 }
 
+.grade-bar {
+    animation : animation-bar 1s;
+}
+
 .subject-name {
     width: 50px;
     height: 27px;
@@ -84,6 +88,11 @@ main {
     text-transform: uppercase;
     color: var(--main-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes animation-bar {
+    0% {top: 0px; height: 0%;}
+    100% {top: 300px;}
 }
 
 @media (max-width: 768px) {

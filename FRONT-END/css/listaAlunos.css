@@ -13,6 +13,13 @@ main {
     padding-left: 100px;
 }
 
+#status {
+    background-color: transparent;
+    color: var(--titles-color);
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
 .subtitle-container {
     display: flex;
     gap: 24px;
@@ -92,6 +99,8 @@ main {
     height: 350px;
     gap: 16px;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: all 0.3s;
 }
 
 .student-item:hover {
