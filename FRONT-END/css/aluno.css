@@ -40,8 +40,10 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 700px;
+    width: auto;
     height: 500px;
+    padding-right: 30px;
+    padding-left: 30px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -95,6 +97,48 @@ body {
 @keyframes animation-bar {
     0% {top: 0px; height: 0%;}
     100% {top: 300px;}
+}
+
+@media (max-width: 1500px) {
+    main {
+        gap: 100px;
+    }
+
+    .student-info{
+        width: 300px;
+        height: 300px;
+    }
+
+    .student-image {
+        width: 200px;
+    }
+
+    .student-name {
+        font-size: 16px;
+    }
+
+    .student-subjects {
+        width: auto;
+        height: 300px;
+        gap: 1px;
+    }
+
+    .subject-info {
+        width: 60px;
+    }
+
+    .subject-grade {
+        font-size: 16px;
+    }
+
+    .subject-bar {
+        width: 12px;
+        height: 200px;
+    }
+
+    .subject-name {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {

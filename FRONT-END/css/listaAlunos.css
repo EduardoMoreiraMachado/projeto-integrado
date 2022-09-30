@@ -22,6 +22,7 @@ main {
 
 .subtitle-container {
     display: flex;
+    align-items: center;
     gap: 24px;
 }
 
@@ -44,6 +45,7 @@ main {
 
 .option {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 
@@ -112,13 +114,9 @@ main {
 .student-image {
     width: 200px;
     height: 200px;
-    left: 0px;
-    top: 0px;
 }
 
 .student-name {
-    width: 176px;
-    height: 54px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -126,6 +124,58 @@ main {
     text-align: center;
     text-transform: uppercase;    
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1500px) {
+    .filters-container {
+        height: 5%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .subtitle-title {
+        font-size: 12px;
+    }
+
+    .subtitle-option {
+        font-size: 12px;
+    }
+
+    .course-info {
+        height: 95%;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        gap: 50px;
+    }
+
+    .course-name {
+        font-size: 25px;
+        width: auto;
+    }
+
+    .students-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .student-item {
+        width: 170px;
+        height: 300px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .student-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .student-name {
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -162,6 +212,7 @@ main {
     }
 
     .students-container {
+        display: flex;
         flex-direction: column;
     }
 }

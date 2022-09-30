@@ -63,6 +63,54 @@ main {
     font-weight: 500;
 }
 
+@media (max-width: 1500px) {
+    main {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 0px;
+        padding-left: 0px;    
+    }
+
+    .home {
+        gap: 50px;
+    }
+
+    .devices-container{
+        align-items: center;
+    }
+
+    .message-container {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .message {
+        font-size: 30px;
+    }
+
+    .devices-image {
+        width: 250px;
+    }
+
+    .studant-image {
+        width: 150px;
+    }
+
+    .course-item {
+        width: 250px;
+        height: 120px;
+    }
+
+    .course-icon {
+        width: 50px;
+    }
+
+    .course-text {
+        font-size: 34px;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         padding-top: 50px;
