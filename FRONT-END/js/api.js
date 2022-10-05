@@ -2,7 +2,7 @@
 
 const listaCursos = async () => {
 
-    const url = 'http://localhost:3030/cursos';
+    const url = 'https://heroic-lily-07fa7c.netlify.app/.netlify/functions/api/cursos';
 
     const response = await fetch(url);
 
@@ -16,7 +16,7 @@ const listaAlunos = async (filtro) => {
 
     let sigla = filtro;
 
-    const url = `http://localhost:3030/alunos/?sigla=${sigla}`;
+    const url = `https://heroic-lily-07fa7c.netlify.app/.netlify/functions/api/alunos/?sigla=${sigla}`;
 
     const response = await fetch(url);
 
@@ -30,7 +30,7 @@ const listaDisciplinas = async (filtro) => {
 
     let matricula = filtro;
     
-    const url = `http://localhost:3030/disciplinas/?matricula=${matricula}`;
+    const url = `https://heroic-lily-07fa7c.netlify.app/.netlify/functions/api/disciplinas/?matricula=${matricula}`;
 
     const response = await fetch(url);
 
@@ -46,7 +46,7 @@ const listaAlunosAno = async (filtro, curso) => {
 
     let sigla = curso;
 
-    const url = `http://localhost:3030/alunosAno/?ano=${ano}&sigla=${sigla}`;
+    const url = `https://heroic-lily-07fa7c.netlify.app/.netlify/functions/api/alunosAno/?ano=${ano}&sigla=${sigla}`;
 
     const response = await fetch(url);
 
@@ -62,7 +62,7 @@ const listaAlunosStatus = async (filtro, curso) => {
 
     let sigla = curso;
 
-    const url = `http://localhost:3030/alunosStatus/?status=${status}&sigla=${sigla}`;
+    const url = `https://heroic-lily-07fa7c.netlify.app/.netlify/functions/api/alunosStatus/?status=${status}&sigla=${sigla}`;
 
     const response = await fetch(url);
 
