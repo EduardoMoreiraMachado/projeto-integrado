@@ -29,6 +29,13 @@ const nomeCurso = async (array, nome) => {
 
 }
 
+const anoFiltro = async (array) => {
+
+    let alunos = await array;
+
+    
+}
+
 const cardsAlunos = async (array) => {
 
     let alunos = await array;

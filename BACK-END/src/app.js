@@ -15,10 +15,10 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 //import do arquivo de alunos
-const { getCursoAlunos, getDisciplinasAlunos, getAlunosAno, getAlunosStatus } = require('./js/alunos.js');
+const { getCursoAlunos, getDisciplinasAlunos, getAlunosAno, getAlunosStatus } = require('../js/alunos.js');
 
 //import do arquivo de cursos
-const { getCursos } = require('./js/cursos.js');
+const { getCursos } = require('../js/cursos.js');
 
 const app = express();
 
@@ -39,7 +39,7 @@ app.use((request, response, next) => {
 });
 
 //EndPoint: listagem de cursos
-app.get('/cursos', cors(), async function(request, response, next) {
+app.get('/.netlify/functions/api/cursos/', cors(), async function(request, response, next) {
 
     //chama a funcao que vai localizar as informacoes solicitadas
     let curso = getCursos();
@@ -59,7 +59,7 @@ app.get('/cursos', cors(), async function(request, response, next) {
 });
 
 //EndPoint: listagem de alunos pelo nome do curso
-app.get('/alunos/', cors(), async function(request, response, next) {
+app.get('/.netlify/functions/api//alunos/', cors(), async function(request, response, next) {
 
     //recebe a variavel sigla por QueryString (indicada quando precisamos criar filtros)
     let sigla = request.query.sigla;
@@ -82,7 +82,7 @@ app.get('/alunos/', cors(), async function(request, response, next) {
 });
 
 //EndPoint: listagem de discplinas pelo numero de matricula do aluno
-app.get('/disciplinas/', cors(), async function(request, response, next) {
+app.get('/.netlify/functions/api//disciplinas/', cors(), async function(request, response, next) {
 
     //recebe a variavel nome por QueryString (indicada quando precisamos criar filtros)
     let matricula = request.query.matricula;
@@ -104,7 +104,7 @@ app.get('/disciplinas/', cors(), async function(request, response, next) {
 });
 
 //EndPoint: listagem de alunos pelo ano de conclusao do curso 
-app.get('/alunosAno/', cors(), async function(request, response, next) {
+app.get('/.netlify/functions/api//alunosAno/', cors(), async function(request, response, next) {
 
     //recebe a variavel ano por QueryString (indicada quando precisamos criar filtros)
     let ano = request.query.ano;
@@ -130,7 +130,7 @@ app.get('/alunosAno/', cors(), async function(request, response, next) {
 });
 
 //EndPoint: listagem de alunos pelo status de conclusao do curso
-app.get('/alunosStatus/', cors(), async function(request, response, next) {
+app.get('/.netlify/functions/api//alunosStatus/', cors(), async function(request, response, next) {
 
     //recebe a variavel status por QueryString (indicada quando precisamos criar filros)
     let status = request.query.status;
@@ -161,3 +161,5 @@ app.listen(3030, function(){
     console.log('Servidor aguardando requisições');
 
 });
+
+module.exports = app
