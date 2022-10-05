@@ -29,12 +29,23 @@ const nomeCurso = async (array, nome) => {
 
 }
 
-const anoFiltro = async (array) => {
+// const anoFiltro = async (array) => {
 
-    let alunos = await array;
+//     let alunos = await array;
 
+//     let select = document.getElementById('year');
+
+//     alunos.forEach(item => {
+
+//         select.innerHTML = `
+//             <option value="${item.conclusao}">${item.conclusao}</option>
+//         `
+//         console.log(item.conclusao)
+//     });
     
-}
+// }
+
+// anoFiltro(listaAlunos(sigla01));
 
 const cardsAlunos = async (array) => {
 

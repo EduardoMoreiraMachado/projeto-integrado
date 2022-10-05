@@ -20,6 +20,13 @@ main {
     border-radius: 5px;
 }
 
+#year {
+    background-color: transparent;
+    color: var(--titles-color);
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
 .subtitle-container {
     display: flex;
     align-items: center;
